@@ -191,7 +191,7 @@ body {
   backdrop-filter: blur(40px);
 }
 
-.Hongkon05 {
+.Hongkong05 {
   left: 24px;
   top: 30px;
   position: absolute;
@@ -264,4 +264,195 @@ body {
   font-family: Inter;
   font-weight: 300;
   word-wrap: break-word;
+}
+
+.PartlyCloudyDaytimeColor02 {
+  width: 48px;
+  height: 48px;
+  left: 92px;
+  top: 20px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.Image02 {
+  width: 48px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.NewYork02 {
+  left: 20px;
+  top: 100px;
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.PartlyCloudy02 {
+  left: 20px;
+  top: 124px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+.Card08 {
+  padding: 20px;
+  background: #1d2837;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  outline: 1px rgba(255, 255, 255, 0.15) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(40px);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.PartlyCloudyNightColor08 {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Image08 {
+  width: 64px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.Card09 {
+  padding: 20px;
+  background: #1d2837;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  outline: 1px rgba(255, 255, 255, 0.15) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(40px);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.SandstormColor09 {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Image09 {
+  width: 64px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.Card07 {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    #1d2837;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  outline: 1px rgba(255, 255, 255, 0.15) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(40px);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 36px;
+  display: inline-flex;
+}
+
+.Row07 {
+  padding-left: 2px;
+  padding-right: 2px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  display: inline-flex;
+}
+
+.Now07 {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.CloudColor07 {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Image07 {
+  width: 36px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.temp-for-third-div {
+  width: 35px;
+  color: white;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.Am {
+  text-align: center;
+}
+
+.BlowingSandColor {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.SunCloudyColor {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Base {
+  width: 36px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
 }
