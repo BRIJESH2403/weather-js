@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+body {
+  background-color: #0a0a0a;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.weather-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.forecast-card {
+  background-color: #1b1e28;
+  border-radius: 16px;
+  padding: 20px;
+  width: 360px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.city-tabs {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.city-tabs .active {
+  opacity: 1;
+  color: #fff;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+}
+
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.forecast-item {
+  text-align: center;
+}
+
+.forecast-item img {
+  width: 40px;
+  margin: 5px 0;
+}
+
+.forecast-item .weather {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.forecast-item .temp {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.forecast-item .aqi {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.next-icon {
+  width: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.weather-card-small {
+  background: linear-gradient(to bottom, #1b1e28, #181a22);
+  border-radius: 16px;
+  padding: 20px;
+  width: 180px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.weather-card-small .header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.weather-icon {
+  position: relative;
+  margin: 10px 0;
+}
+
+.weather-icon img {
+  width: 50px;
+}
+
+.weather-icon .overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+
+.weather-card-small .condition {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.weather-card-small .footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.weather-card-small:hover {
+  background: #3b82f6;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .weather-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-card {
+    width: 100%;
+  }
+
+  .weather-card-small {
+    width: 100%;
+  }
+}
