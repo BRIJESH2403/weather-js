@@ -8,6 +8,17 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  flex-wrap: wrap;
+}
+
+.first-div {
+  display: flex;
+  align-items: center;
+}
+
+.second-div {
+  display: flex;
+  align-items: center;
 }
 
 .weather-card {
@@ -150,4 +161,107 @@ body {
   .weather-card-small {
     width: 100%;
   }
+}
+
+.weather-card2 {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.weather-card2 {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Card05 {
+  width: 289px;
+  height: 160px;
+  position: relative;
+  background: linear-gradient(0deg, 0%, 100%), #121212;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  outline: 1px rgba(255, 255, 255, 0.15) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(40px);
+}
+
+.Hongkon05 {
+  left: 24px;
+  top: 30px;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.Time05 {
+  left: 24px;
+  top: 58px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+.HeavyRainstormColor {
+  width: 96px;
+  height: 96px;
+  left: 163px;
+  top: 32px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.Image-card05 {
+  width: 96px;
+  height: 96px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+.Temp05 {
+  left: 24px;
+  top: 86px;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.Card02 {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  background: #121212;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  outline: 1px rgba(255, 255, 255, 0.15) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(40px);
+}
+
+.temp02 {
+  left: 20px;
+  top: 20px;
+  position: absolute;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 300;
+  word-wrap: break-word;
 }
