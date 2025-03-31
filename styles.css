@@ -14,7 +14,66 @@ body {
 .first-div {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
+/*..................*/
+.forecast-card {
+  border: 1px solid #ccc; /* Optional: Add a border to the card */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.weather-card-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc; /* Optional: Add a border to the card */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px; /* Adds space between the small weather cards */
+}
+
+.forecast-list {
+  display: flex;
+  gap: 15px;
+}
+
+.city-tabs {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+.weather-icon img {
+  width: 50px; /* Adjust size of images */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.next-icon {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*..................*/
 
 .second-div {
   display: flex;
@@ -315,8 +374,8 @@ body {
   outline: 1px rgba(255, 255, 255, 0.15) solid;
   outline-offset: -1px;
   backdrop-filter: blur(40px);
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   display: inline-flex;
 }
@@ -344,8 +403,8 @@ body {
   outline: 1px rgba(255, 255, 255, 0.15) solid;
   outline-offset: -1px;
   backdrop-filter: blur(40px);
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   display: inline-flex;
 }
@@ -455,4 +514,154 @@ body {
   left: 0px;
   top: 0px;
   position: absolute;
+}
+
+.last-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Card03 {
+  width: 247px;
+  height: 264px;
+  position: relative;
+  background: #1d2837;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  outline: 1px rgba(255, 255, 255, 0.15) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(40px);
+}
+
+.NewYork {
+  left: 20px;
+  top: 20px;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.Time03 {
+  left: 187px;
+  top: 24px;
+  position: absolute;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+.FullMoonColor03 {
+  width: 96px;
+  height: 96px;
+  left: 76px;
+  top: 68px;
+  position: absolute;
+  opacity: 0.5;
+  box-shadow: 53.333335876464844px 53.333335876464844px 53.333335876464844px;
+  overflow: hidden;
+  filter: blur(26.67px);
+}
+
+.FullMoonColor {
+  width: 96px;
+  height: 96px;
+  left: 76px;
+  top: 68px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.FullMoon {
+  left: 92px;
+  top: 178px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+.Image03 {
+  width: 96px;
+  height: 96px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.Aqi70 {
+  left: 20px;
+  top: 227px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.temp03 {
+  left: 184px;
+  top: 227px;
+  position: absolute;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.Card06 {
+  padding: 30px;
+  background: #121212;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  outline: 1px rgba(255, 255, 255, 0.15) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(40px);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
+}
+
+.Temperature06 {
+  left: 177px;
+  top: 8px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Line {
+  width: 240px;
+  height: 36px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.last-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
