@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div>
-    <div class="first-div">
-        <!-- Card 1 - Weather Forecast -->
+
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">Search</button>
+    </div>
+    <div>
         <div class="forecast-card">
             <div class="title">
                 <div class="city-tabs">
@@ -20,7 +24,7 @@
             <div class="divider"></div>
             <div class="forecast-list">
                 <div class="forecast-item">
-                    <h3>Today(Sun)</h3>
+                    <p>Today(Sun)</p>
                     <p class="date">Mar 6</p>
                     <img src="assets/images/01_sunny_color.png" alt="Sunny">
                     <p class="weather">Sunny</p>
@@ -28,7 +32,7 @@
                     <p class="aqi">AQI 67</p>
                 </div>
                 <div class="forecast-item">
-                    <h3>Mon</h3>
+                    <p>Mon</p>
                     <p class="date">Mar 7</p>
                     <img src="assets/images/04_sun_cloudy_color.png" alt="Cloudy">
                     <p class="weather">Cloudy</p>
@@ -36,7 +40,7 @@
                     <p class="aqi">AQI 71</p>
                 </div>
                 <div class="forecast-item">
-                    <h3>Tue</h3>
+                    <p>Tue</p>
                     <p class="date">Mar 8</p>
                     <img src="assets/images/07_lightning_color.png" alt="Lightning">
                     <p class="weather">Lightning</p>
@@ -44,7 +48,7 @@
                     <p class="aqi">AQI 65</p>
                 </div>
                 <div class="forecast-item">
-                    <h3>Wed</h3>
+                    <p>Wed</p>
                     <p class="date">Mar 9</p>
                     <img src="assets/images/11_heavy_rain_color.png" alt="Heavy rain">
                     <p class="weather">Heavy rain</p>
@@ -52,8 +56,6 @@
                     <p class="aqi">AQI 70</p>
                 </div>
             </div>
-            <img src="https://dashboard.codeparrot.ai/api/image/Z-YufR_Ow-G566y2/right-sm.png" alt="Next"
-                class="next-icon">
         </div>
 
         <!-- Card 2 - Snow Weather -->
@@ -74,77 +76,71 @@
         </div>
 
 
-        <div class="weather-card-small">
-            <div class="header">
-                <span class="city">Athens</span>
-                <span class="time">09:30</span>
+        <div class="weather-card-small2">
+            <div class="header2">
+                <span class="city2">Athens</span>
+                <span class="time2">09:30</span>
             </div>
-            <div class="weather-icon">
+            <div class="weather-icon2">
                 <img src="assets/images/25_mist_color1.png" alt="Snow">
-                <img src="assets/images/25_mist_color2.png" alt="Snow" class="overlay">
             </div>
-            <h2 class="condition">Mist</h2>
-            <div class="footer">
-                <span class="aqi">AQI 75</span>
-                <span class="temp-range">15°-24°</span>
+            <h2 class="condition2">Mist</h2>
+            <div class="footer2">
+                <span class="aqi2">AQI 75</span>
+                <span class="temp-range2">15°-24°</span>
             </div>
         </div>
 
-        <div class="weather-card-small">
-            <div class="header">
-                <span class="city">Tokyo</span>
-                <span class="time">09:30</span>
+        <div class="weather-card-small3">
+            <div class="header3">
+                <span class="city3">Tokyo</span>
+                <span class="time3">09:30</span>
             </div>
-            <div class="weather-icon">
+            <div class="weather-icon3">
                 <img src="assets/images/40_rainbow_color1.png" alt="Snow">
-                <img src="assets/images/40_rainbow_color2.png" alt="Snow" class="overlay">
             </div>
-            <h2 class="condition">Rainbow</h2>
-            <div class="footer">
-                <span class="aqi">AQI 70</span>
-                <span class="temp-range">12°-19°</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="second div">
-        <div class=weather-card2>
-            <div data-layer="Card_05" class="Card05">
-                <div data-layer="Hongkong" class="Hongkong05">
-                    Hongkong</div>
-                <div data-layer="09:30 • 03/08" class="Time05">
-                    09:30 • 03/08 </div>
-                <div data-layer="13_heavy_rainstorm_color" class="HeavyRainstormColor">
-                    <img data-layer="Image" class="Image-card05" src="assets/images/13_heavy_rainstorm_color.png" />
-                </div>
-                <div class="Temp05">
-                    24°</div>
-            </div>
-
-            <div data-layer="Card_02" class="Card02">
-                <div class="temp02">
-                    24°</div>
-                <div data-layer="35_partly_cloudy_daytime_color" class="PartlyCloudyDaytimeColor02">
-                    <img data-layer="Image" class="Image02" src="assets/images/35_partly_cloudy_daytime_color.png" />
-                </div>
-                <div data-layer="New York" class="NewYork02">
-                    New York</div>
-                <div data-layer="Partly cloudy" class="PartlyCloudy02">
-                    Partly cloudy</div>
-            </div>
-
-            <div data-layer="Card_08" class="Card08">
-                <div data-layer="36_partly_cloudy_night_color" class="PartlyCloudyNightColor08">
-                    <img data-layer="Image" class="Image08" src="assets/images/36_partly_cloudy_night_color.png" />
-                </div>
-            </div>
-            <div data-layer="Card_09" class="Card09">
-                <div data-layer="39_sandstorm_color" class="SandstormColor09">
-                    <img data-layer="Image" class="Image09" src="assets/images/39_sandstorm_color.png" />
-                </div>
+            <h2 class="condition3">Rainbow</h2>
+            <div class="footer3">
+                <span class="aqi3">AQI 70</span>
+                <span class="temp-range3">12°-19°</span>
             </div>
         </div>
-    </div>
+
+
+        <div data-layer="Card_05" class="Card05">
+            <div data-layer="Hongkong" class="Hongkong05">
+                Hongkong</div>
+            <div data-layer="09:30 • 03/08" class="Time05">
+                09:30 • 03/08 </div>
+            <div data-layer="13_heavy_rainstorm_color" class="HeavyRainstormColor">
+                <img data-layer="Image" class="Image-card05" src="assets/images/13_heavy_rainstorm_color.png" />
+            </div>
+            <div class="Temp05">
+                24°</div>
+        </div>
+
+        <div data-layer="Card_02" class="Card02">
+            <div class="temp02">
+                24°</div>
+            <div data-layer="35_partly_cloudy_daytime_color" class="PartlyCloudyDaytimeColor02">
+                <img data-layer="Image" class="Image02" src="assets/images/35_partly_cloudy_daytime_color.png" />
+            </div>
+            <div data-layer="New York" class="NewYork02">
+                New York</div>
+            <div data-layer="Partly cloudy" class="PartlyCloudy02">
+                Partly cloudy</div>
+        </div>
+
+        <div data-layer="Card_08" class="Card08">
+            <div data-layer="36_partly_cloudy_night_color" class="PartlyCloudyNightColor08">
+                <img data-layer="Image" class="Image08" src="assets/images/36_partly_cloudy_night_color.png" />
+            </div>
+        </div>
+        <div data-layer="Card_09" class="Card09">
+            <div data-layer="39_sandstorm_color" class="SandstormColor09">
+                <img data-layer="Image" class="Image09" src="assets/images/39_sandstorm_color.png" />
+            </div>
+        </div>
 
 
 
@@ -154,7 +150,7 @@
 
 
 
-    <div class="last-div">
+
         <div data-layer="card_07" class="Card07">
             <div data-layer="row" class="Row07">
                 <div data-layer="Now" class="Now07">
@@ -228,7 +224,7 @@
                     New York</div>
                 <div data-layer="09:30" class="Time03">
                     09:30</div>
-                <div data-layer="34_full_moon_color" class="FullMoonColor03" style="">
+                <div data-layer="34_full_moon_color" class="FullMoonColor03">
                     <img data-layer="Image" class="Image03" src="assets/images/34_full_moon_color2.png" />
                 </div>
                 <div data-layer="34_full_moon_color" class="FullMoonColor">
@@ -379,11 +375,8 @@
                 </div>
             </div>
         </div>
-
     </div>
-
-
-</div>
+    <script src="script.js"></script>
 </body>
 
 </html>
