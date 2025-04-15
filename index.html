@@ -2,154 +2,42 @@
 <html>
 
 <head>
+    <title>Weather App</title>
+    <meta name="description"
+        content="Get accurate and real-time weather forecasts, temperatures, and sunrise/sunset info based on your location or city input.">
+
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js"></script>
+<script>
+    dayjs.extend(dayjs_plugin_duration);
+</script>
+
 
 <body>
-    <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search...">
-        <button class="search-button">Search</button>
-    </div>
-    <div>
-        <div class="forecast-card">
-            <div class="title">
-                <div class="city-tabs">
-                    <span class="active">New York</span>
-                    <span>Hongkong</span>
-                    <span>Tokyo</span>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="forecast-list">
-                <div class="forecast-item">
-                    <p>Today(Sun)</p>
-                    <p class="date">Mar 6</p>
-                    <img src="assets/images/01_sunny_color.png" alt="Sunny">
-                    <p class="weather">Sunny</p>
-                    <p class="temp">15-20°C</p>
-                    <p class="aqi">AQI 67</p>
-                </div>
-                <div class="forecast-item">
-                    <p>Mon</p>
-                    <p class="date">Mar 7</p>
-                    <img src="assets/images/04_sun_cloudy_color.png" alt="Cloudy">
-                    <p class="weather">Cloudy</p>
-                    <p class="temp">16-22°C</p>
-                    <p class="aqi">AQI 71</p>
-                </div>
-                <div class="forecast-item">
-                    <p>Tue</p>
-                    <p class="date">Mar 8</p>
-                    <img src="assets/images/07_lightning_color.png" alt="Lightning">
-                    <p class="weather">Lightning</p>
-                    <p class="temp">17-20°C</p>
-                    <p class="aqi">AQI 65</p>
-                </div>
-                <div class="forecast-item">
-                    <p>Wed</p>
-                    <p class="date">Mar 9</p>
-                    <img src="assets/images/11_heavy_rain_color.png" alt="Heavy rain">
-                    <p class="weather">Heavy rain</p>
-                    <p class="temp">16-21°C</p>
-                    <p class="aqi">AQI 70</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 2 - Snow Weather -->
-        <div class="weather-card-small">
-            <div class="header">
-                <span class="city">New York</span>
-                <span class="time">09:30</span>
-            </div>
-            <div class="weather-icon">
-                <img src="assets/images/22_snow_color1.png" alt="Snow">
-                <img src="assets/images/22_snow_color2.png" alt="Snow" class="overlay">
-            </div>
-            <h2 class="condition">Snow</h2>
-            <div class="footer">
-                <span class="aqi">AQI 70</span>
-                <span class="temp-range">-5°-0°</span>
-            </div>
-        </div>
-
-
-        <div class="weather-card-small2">
-            <div class="header2">
-                <span class="city2">Athens</span>
-                <span class="time2">09:30</span>
-            </div>
-            <div class="weather-icon2">
-                <img src="assets/images/25_mist_color1.png" alt="Snow">
-            </div>
-            <h2 class="condition2">Mist</h2>
-            <div class="footer2">
-                <span class="aqi2">AQI 75</span>
-                <span class="temp-range2">15°-24°</span>
-            </div>
-        </div>
-
-        <div class="weather-card-small3">
-            <div class="header3">
-                <span class="city3">Tokyo</span>
-                <span class="time3">09:30</span>
-            </div>
-            <div class="weather-icon3">
-                <img src="assets/images/40_rainbow_color1.png" alt="Snow">
-            </div>
-            <h2 class="condition3">Rainbow</h2>
-            <div class="footer3">
-                <span class="aqi3">AQI 70</span>
-                <span class="temp-range3">12°-19°</span>
-            </div>
-        </div>
-
-
+    <div class="container1">
         <div data-layer="Card_05" class="Card05">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg></button>
             <div data-layer="Hongkong" class="Hongkong05">
                 Hongkong</div>
             <div data-layer="09:30 • 03/08" class="Time05">
-                09:30 • 03/08 </div>
+                14:27 PM • 3-Apr-2025 </div>
             <div data-layer="13_heavy_rainstorm_color" class="HeavyRainstormColor">
                 <img data-layer="Image" class="Image-card05" src="assets/images/13_heavy_rainstorm_color.png" />
             </div>
             <div class="Temp05">
-                24°</div>
+                24°C</div>
         </div>
-
-        <div data-layer="Card_02" class="Card02">
-            <div class="temp02">
-                24°</div>
-            <div data-layer="35_partly_cloudy_daytime_color" class="PartlyCloudyDaytimeColor02">
-                <img data-layer="Image" class="Image02" src="assets/images/35_partly_cloudy_daytime_color.png" />
-            </div>
-            <div data-layer="New York" class="NewYork02">
-                New York</div>
-            <div data-layer="Partly cloudy" class="PartlyCloudy02">
-                Partly cloudy</div>
-        </div>
-
-        <div data-layer="Card_08" class="Card08">
-            <div data-layer="36_partly_cloudy_night_color" class="PartlyCloudyNightColor08">
-                <img data-layer="Image" class="Image08" src="assets/images/36_partly_cloudy_night_color.png" />
-            </div>
-        </div>
-        <div data-layer="Card_09" class="Card09">
-            <div data-layer="39_sandstorm_color" class="SandstormColor09">
-                <img data-layer="Image" class="Image09" src="assets/images/39_sandstorm_color.png" />
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
 
         <div data-layer="card_07" class="Card07">
             <div data-layer="row" class="Row07">
@@ -164,8 +52,8 @@
             </div>
             <div data-layer="row" class="Row07">
                 <div data-layer="11AM" class="Am"><span
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word">10</span><span
-                        style="color: white; font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 20px; word-wrap: break-word">AM</span>
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word">
+                        10 AM</span>
                 </div>
                 <div data-layer="04_sun_cloudy_color" class="SunCloudyColor">
                     <img data-layer="Image" class="Image07" src="assets/images/19 temp.png" />
@@ -175,8 +63,8 @@
             </div>
             <div data-layer="row" class="Row07">
                 <div data-layer="11AM" class="Am"><span
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word">11</span><span
-                        style="color: white; font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 20px; word-wrap: break-word">AM</span>
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word">11
+                        AM</span>
                 </div>
                 <div data-layer="04_sun_cloudy_color" class="SunCloudyColor">
                     <img data-layer="Image" class="Image07" src="assets/images/22 temp.png" />
@@ -186,8 +74,8 @@
             </div>
             <div data-layer="row" class="Row07">
                 <div data-layer="11AM" class="Am"><span
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word">11</span><span
-                        style="color: white; font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 20px; word-wrap: break-word">AM</span>
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word">11
+                        AM</span>
                 </div>
                 <div data-layer="04_sun_cloudy_color" class="SunCloudyColor">
                     <img data-layer="Image" class="Image07" src="assets/images/23 temp.png" />
@@ -197,8 +85,8 @@
             </div>
             <div data-layer="row" class="Row07">
                 <div data-layer="11AM" class="Am"><span
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word">11</span><span
-                        style="color: white; font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 20px; word-wrap: break-word">AM</span>
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word">11
+                        AM</span>
                 </div>
                 <div data-layer="04_sun_cloudy_color" class="SunCloudyColor">
                     <img data-layer="Image" class="Image07" src="assets/images/24-1 temp.png" />
@@ -208,8 +96,8 @@
             </div>
             <div data-layer="row" class="Row07">
                 <div data-layer="11AM" class="Am"><span
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word">11</span><span
-                        style="color: white; font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 20px; word-wrap: break-word">AM</span>
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word">11
+                        AM</span>
                 </div>
                 <div data-layer="04_sun_cloudy_color" class="SunCloudyColor">
                     <img data-layer="Image" class="Image07" src="assets/images/24-2 temp.png" />
@@ -218,70 +106,64 @@
                     24°</div>
             </div>
         </div>
-        <div>
-            <div data-layer="card_03" class="Card03">
-                <div data-layer="New York" class="NewYork">
-                    New York</div>
-                <div data-layer="09:30" class="Time03">
-                    09:30</div>
-                <div data-layer="34_full_moon_color" class="FullMoonColor03">
-                    <img data-layer="Image" class="Image03" src="assets/images/34_full_moon_color2.png" />
-                </div>
-                <div data-layer="34_full_moon_color" class="FullMoonColor">
-                    <img data-layer="Image" class="Image03" src="assets/images/34_full_moon_color.png" />
-                </div>
-                <div data-layer="full moon" class="FullMoon">
-                    full moon</div>
-                <div data-layer="AQI 70" class="Aqi70">
-                    AQI 70</div>
-                <div data-layer="-5°-0°" class="temp03"
-                    style="left: 184px; top: 227px; position: absolute; text-align: right; color: rgba(255, 255, 255, 0.68); font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">
-                    -5°-0°</div>
+
+        <div data-layer="card_03" class="Card03">
+            <div data-layer="34_full_moon_color" class="FullMoonColor">
+                <img data-layer="Image" class="Image03" src="assets/images/Waxing Gibbous.png" />
+            </div>
+            <div data-layer="full moon" class="FullMoon">
+                <span id="moon-phase">--</span>
+            </div>
+            <div class="moontime">
+                <p style="margin: 0; color: white;">Moonrise: <span id="moonrise">--</span></p>
+                <p style="margin: 0; color: white;">Moonset: <span id="moonset">--</span></p>
+            </div>
+        </div>
+
+        <div data-layer="card_03" class="Card003">
+            <div class="SUNTIMER">
+                <div id="sun-status-text"></div>
+                <div id="sun-timer" class="SunTimer">--:--:--</div>
+            </div>
+
+            <div class="suntime">
+                <p style="margin: 0; color: white;">Sunrise: <span id="sunrise">--</span></p>
+                <p style="margin: 0; color: white;">Sunset: <span id="sunset">--</span></p>
             </div>
         </div>
 
         <div data-layer="card_06" class="Card06">
-            <div data-layer="line" class="Line">
-                <div data-layer="Today" class="Today06"
-                    style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500;">
-                    Today
-                </div>
-                <img src="assets/images/06-1.png" alt="Weather Icon"
-                    style="width: 24px; height: 24px; margin-right: 5px;">
-                <div data-layer="temperature" class="Temperature06">
-                    <!-- Weather Icon -->
-                    <div data-layer="24°"
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word;">
-                        24°
-                    </div>
-                    <div data-layer="13°"
-                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: PingFang SC; font-weight: 400; line-height: 20px; margin-left: 5px;">
-                        13°
-                    </div>
+
+            <div class="weekly">
+                <div><span>WEEKLY WEATHER</span></div>
+                <div class="MaxMin">
+                    <span>MAX</span>
+                    <span>MIN</span>
                 </div>
             </div>
+
             <div data-layer="line" class="Line">
                 <div data-layer="Today" class="Today06"
-                    style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500;">
+                    style="color: white; font-size: 16px; font-family: serif; font-weight: 500;">
                     Mon
                 </div>
                 <img src="assets/images/06-2.png" alt="Weather Icon"
                     style="width: 24px; height: 24px; margin-right: 5px;">
                 <div data-layer="temperature" class="Temperature06">
-                    <!-- Weather Icon -->
+
                     <div data-layer="24°"
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word;">
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word;">
                         22°
                     </div>
                     <div data-layer="13°"
-                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: PingFang SC; font-weight: 400; line-height: 20px; margin-left: 5px;">
+                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: serif; font-weight: 400; line-height: 20px; margin-left: 5px;">
                         17°
                     </div>
                 </div>
             </div>
             <div data-layer="line" class="Line">
                 <div data-layer="Today" class="Today06"
-                    style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500;">
+                    style="color: white; font-size: 16px; font-family: serif; font-weight: 500;">
                     Tue
                 </div>
                 <img src="assets/images/06-3.png" alt="Weather Icon"
@@ -289,18 +171,18 @@
                 <div data-layer="temperature" class="Temperature06">
                     <!-- Weather Icon -->
                     <div data-layer="24°"
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word;">
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word;">
                         21°
                     </div>
                     <div data-layer="13°"
-                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: PingFang SC; font-weight: 400; line-height: 20px; margin-left: 5px;">
+                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: serif; font-weight: 400; line-height: 20px; margin-left: 5px;">
                         15°
                     </div>
                 </div>
             </div>
             <div data-layer="line" class="Line">
                 <div data-layer="Today" class="Today06"
-                    style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500;">
+                    style="color: white; font-size: 16px; font-family: serif; font-weight: 500;">
                     Wed
                 </div>
                 <img src="assets/images/06-4.png" alt="Weather Icon"
@@ -308,18 +190,18 @@
                 <div data-layer="temperature" class="Temperature06">
                     <!-- Weather Icon -->
                     <div data-layer="24°"
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word;">
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word;">
                         20°
                     </div>
                     <div data-layer="13°"
-                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: PingFang SC; font-weight: 400; line-height: 20px; margin-left: 5px;">
+                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: serif; font-weight: 400; line-height: 20px; margin-left: 5px;">
                         16°
                     </div>
                 </div>
             </div>
             <div data-layer="line" class="Line">
                 <div data-layer="Today" class="Today06"
-                    style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500;">
+                    style="color: white; font-size: 16px; font-family: serif; font-weight: 500;">
                     Tru
                 </div>
                 <img src="assets/images/06-5.png" alt="Weather Icon"
@@ -327,18 +209,18 @@
                 <div data-layer="temperature" class="Temperature06">
                     <!-- Weather Icon -->
                     <div data-layer="24°"
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word;">
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word;">
                         22°
                     </div>
                     <div data-layer="13°"
-                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: PingFang SC; font-weight: 400; line-height: 20px; margin-left: 5px;">
+                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: serif; font-weight: 400; line-height: 20px; margin-left: 5px;">
                         15°
                     </div>
                 </div>
             </div>
             <div data-layer="line" class="Line">
                 <div data-layer="Today" class="Today06"
-                    style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500;">
+                    style="color: white; font-size: 16px; font-family: serif; font-weight: 500;">
                     Fir
                 </div>
                 <img src="assets/images/06-6.png" alt="Weather Icon"
@@ -346,18 +228,18 @@
                 <div data-layer="temperature" class="Temperature06">
                     <!-- Weather Icon -->
                     <div data-layer="24°"
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word;">
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word;">
                         25°
                     </div>
                     <div data-layer="13°"
-                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: PingFang SC; font-weight: 400; line-height: 20px; margin-left: 5px;">
+                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: serif; font-weight: 400; line-height: 20px; margin-left: 5px;">
                         18°
                     </div>
                 </div>
             </div>
             <div data-layer="line" class="Line">
                 <div data-layer="Today" class="Today06"
-                    style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500;">
+                    style="color: white; font-size: 16px; font-family: serif; font-weight: 500;">
                     Sat
                 </div>
                 <img src="assets/images/06-7.png" alt="Weather Icon"
@@ -365,18 +247,39 @@
                 <div data-layer="temperature" class="Temperature06">
                     <!-- Weather Icon -->
                     <div data-layer="24°"
-                        style="color: white; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 20px; word-wrap: break-word;">
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word;">
                         24°
                     </div>
                     <div data-layer="13°"
-                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: PingFang SC; font-weight: 400; line-height: 20px; margin-left: 5px;">
+                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: serif; font-weight: 400; line-height: 20px; margin-left: 5px;">
                         17°
                     </div>
                 </div>
             </div>
+            <div data-layer="line" class="Line">
+                <div data-layer="Today" class="Today06"
+                    style="color: white; font-size: 16px; font-family: serif; font-weight: 500;">
+                    Sun
+                </div>
+                <img src="assets/images/06-1.png" alt="Weather Icon"
+                    style="width: 24px; height: 24px; margin-right: 5px;">
+                <div data-layer="temperature" class="Temperature06">
+                    <!-- Weather Icon -->
+                    <div data-layer="24°"
+                        style="color: white; font-size: 16px; font-family: serif; font-weight: 500; line-height: 20px; word-wrap: break-word;">
+                        24°
+                    </div>
+                    <div data-layer="13°"
+                        style="width: 22px; height: 20px; color: rgba(255, 255, 255, 0.68); font-size: 16px; font-family: serif; font-weight: 400; line-height: 20px; margin-left: 5px;">
+                        13°
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>
