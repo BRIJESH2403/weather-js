@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.error("Error fetching weather data:", error.message);
       alert("Failed to fetch weather data. Please try again later.");
     }
-  }
+  } 
 
   async function fetchMoonData(city) {
     const apiKey = "01a4ec62be614564bbb83937252703";
