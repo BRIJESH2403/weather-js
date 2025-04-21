@@ -111,29 +111,40 @@ document.addEventListener("DOMContentLoaded", async () => {
   function updateSunInfo(astro, localTime) {
     let timeDiffinSeconds = 0;
     const locationLocalTime = dayjs(localTime).format("YYYY-MM-DD HH:mm:ss");
-    const locationSunriseTime = dayjs(
-      `${locationLocalTime.split(" ")[0]} ${astro.sunrise}`
-    ).format("hh:mm a");
-    const locationSunsetTime = dayjs(
-      `${locationLocalTime.split(" ")[0]} ${astro.sunset}`
-    ).format("hh:mm a");
+    const localDate = locationLocalTime.split(" ")[0];
+    const locationSunriseTime = dayjs(`${localDate} ${astro.sunrise}`).format(
+      "hh:mm a"
+    );
+    const locationSunsetTime = dayjs(`${localDate} ${astro.sunset}`).format(
+      "hh:mm a"
+    );
 
     SunRise.textContent = locationSunriseTime;
     SunSet.textContent = locationSunsetTime;
 
     if (Boolean(astro.is_sun_up)) {
       sunStatusText.textContent = "Sunset in:";
-      timeDiffinSeconds = dayjs(
-        `${localTime.split(" ")[0]} ${astro.sunset}`
-      ).diff(dayjs(localTime), "second");
+      timeDiffinSeconds = dayjs(`${localDate} ${astro.sunset}`).diff(
+        dayjs(localTime),
+        "second"
+      );
     } else {
       sunStatusText.textContent = "Sunrise in:";
-      timeDiffinSeconds = dayjs(
-        `${localTime.split(" ")[0]} ${astro.sunrise}`
-      ).diff(dayjs(localTime), "second");
+
+      const todaySunrise = dayjs(`${localDate} ${astro.sunrise}`);
+      const currentTime = dayjs(localTime);
+
+      if (todaySunrise.isBefore(currentTime)) {
+        const tomorrow = currentTime.add(1, "day").format("YYYY-MM-DD");
+        const nextSunrise = dayjs(`${tomorrow} ${astro.sunrise}`);
+        timeDiffinSeconds = nextSunrise.diff(currentTime, "second");
+      } else {
+        timeDiffinSeconds = todaySunrise.diff(currentTime, "second");
+      }
     }
 
     SunTimer.textContent = formatSeconds(timeDiffinSeconds);
+
     console.log(
       locationLocalTime,
       locationSunriseTime,
