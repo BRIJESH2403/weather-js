@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       await fetchMoonData(locationString);
     } catch (error) {
       console.error("Geolocation error:", error.message);
-      
-      const indiaLocation = "28.6139,77.2090"; 
+
+      const indiaLocation = "28.6139,77.2090";
       await fetchWeather(indiaLocation);
       await fetchMoonData(indiaLocation);
     }
   } else {
     console.warn("Geolocation not supported.");
-    
+
     const indiaLocation = "28.6139,77.2090"; // Delhi coordinates
     await fetchWeather(indiaLocation);
     await fetchMoonData(indiaLocation);
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       "First Quarter": "First Quarter.png",
       "Waxing Gibbous": "Waxing Gibbous.png",
       "Full Moon": "Full Moon.png",
-      "Waning Gibbous": "Waning Gibbous.png",
+      "Waning Gibbous": "Waning Gibbous.jpg",
       "Last Quarter": "Last Quarter.png",
       "Waning Crescent": "Waning Crescent.png",
     };
