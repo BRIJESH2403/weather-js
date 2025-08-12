@@ -8,19 +8,24 @@ document.addEventListener("DOMContentLoaded", async () => {
       const position = await new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject);
       });
+
       const { latitude, longitude } = position.coords;
       const locationString = `${latitude},${longitude}`;
       await fetchWeather(locationString);
       await fetchMoonData(locationString);
     } catch (error) {
       console.error("Geolocation error:", error.message);
-      await fetchWeather("New York");
-      await fetchMoonData("New York");
+      
+      const indiaLocation = "28.6139,77.2090"; 
+      await fetchWeather(indiaLocation);
+      await fetchMoonData(indiaLocation);
     }
   } else {
     console.warn("Geolocation not supported.");
-    await fetchWeather("New York");
-    await fetchMoonData("New York");
+    
+    const indiaLocation = "28.6139,77.2090"; // Delhi coordinates
+    await fetchWeather(indiaLocation);
+    await fetchMoonData(indiaLocation);
   }
 
   const searchBox = document.getElementById("city");
@@ -60,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.error("Error fetching weather data:", error.message);
       alert("Failed to fetch weather data. Please try again later.");
     }
-  } 
+  }
 
   async function fetchMoonData(city) {
     const apiKey = "01a4ec62be614564bbb83937252703";
@@ -275,7 +280,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         hourDate.getDate() > currentTime.getDate()
       );
     });
-
     return upcoming.slice(0, 6);
   }
 });
